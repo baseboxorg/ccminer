@@ -18,9 +18,7 @@ rm cuda-repo-ubuntu1404_6.5-14_amd64.deb
 RUN 
 git clone https://github.com/tpruvot/ccminer.git && \
 cd ccminer && \
-./autogen.sh && \
-./configure && \
-./build.sh
+./build.sh && \
 make install
     
 ENV USER miner@bitbuy.io
